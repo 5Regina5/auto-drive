@@ -1,0 +1,52 @@
+{
+  "overall": {
+    "total": 2500,
+    "success": 2500,
+    "correct": 2156,
+    "success_rate": 100.0,
+    "accuracy": 86.24000000000001,
+    "accuracy_among_success": 86.24000000000001
+  },
+  "by_template": {
+    "existence": {
+      "total": 500,
+      "success": 500,
+      "correct": 472,
+      "success_rate": 100.0,
+      "accuracy": 94.39999999999999,
+      "accuracy_among_success": 94.39999999999999
+    },
+    "counting": {
+      "total": 500,
+      "success": 500,
+      "correct": 336,
+      "success_rate": 100.0,
+      "accuracy": 67.2,
+      "accuracy_among_success": 67.2
+    },
+    "query_object": {
+      "total": 500,
+      "success": 500,
+      "correct": 348,
+      "success_rate": 100.0,
+      "accuracy": 69.6,
+      "accuracy_among_success": 69.6
+    },
+    "query_status": {
+      "total": 500,
+      "success": 500,
+      "correct": 500,
+      "success_rate": 100.0,
+      "accuracy": 100.0,
+      "accuracy_among_success": 100.0
+    },
+    "comparison": {
+      "total": 500,
+      "success": 500,
+      "correct": 500,
+      "success_rate": 100.0,
+      "accuracy": 100.0,
+      "accuracy_among_success": 100.0
+    }
+  }
+}
