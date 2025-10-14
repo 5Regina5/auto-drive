@@ -50,7 +50,7 @@ def save_errors_by_category(all_results):
     print(f"\n保存分类别错误结果:")
     for template_type, error_results in errors_by_type.items():
         if error_results:  # 只有存在错误时才保存
-            error_file = f"f:/auto-drive/data_nothink_h0_singlelabel/errors_{template_type}.json"
+            error_file = f"f:/auto-drive/data_nothink_h1_singlelabel/errors_{template_type}.json"
             try:
                 with open(error_file, 'w', encoding='utf-8') as f:
                     json.dump(error_results, f, ensure_ascii=False, indent=2)
@@ -66,7 +66,7 @@ def save_errors_by_category(all_results):
         all_errors.extend(error_results)
     
     if all_errors:
-        all_errors_file = "f:/auto-drive/data_nothink_h0_singlelabel/all_errors.json"
+        all_errors_file = "f:/auto-drive/data_nothink_h1_singlelabel/all_errors.json"
         try:
             with open(all_errors_file, 'w', encoding='utf-8') as f:
                 json.dump(all_errors, f, ensure_ascii=False, indent=2)
@@ -81,7 +81,7 @@ def merge_results():
     uid_to_template = load_original_questions()
     
     # 查找所有分片文件
-    pattern = "f:/auto-drive/data_nothink_h0_singlelabel/llm_responses_part*.json"
+    pattern = "f:/auto-drive/data_nothink_h1_singlelabel/llm_responses_part*.json"
     part_files = glob.glob(pattern)
     
     if not part_files:
@@ -153,7 +153,7 @@ def merge_results():
             template_stats[template_type]['correct'] += 1
     
     # 保存合并结果
-    output_file = "f:/auto-drive/data_nothink_h0_singlelabel/llm_responses_merged.json"
+    output_file = "f:/auto-drive/data_nothink_h1_singlelabel/llm_responses_merged.json"
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(all_results, f, ensure_ascii=False, indent=2)
@@ -212,7 +212,7 @@ def merge_results():
                 "accuracy_among_success": stats['correct']/stats['success']*100 if stats['success'] > 0 else 0
             }
         
-        stats_file = "f:/auto-drive/data_nothink_h0_singlelabel/accuracy_stats.json"
+        stats_file = "f:/auto-drive/data_nothink_h1_singlelabel/accuracy_stats.json"
         with open(stats_file, 'w', encoding='utf-8') as f:
             json.dump(stats_output, f, ensure_ascii=False, indent=2)
         print(f"\n详细统计信息已保存到: {stats_file}")
