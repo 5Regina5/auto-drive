@@ -11,6 +11,8 @@ code/extract_data_withego.py: 提取了所有annatation以及ego的代码
 code/adjust_answer.py: 在得到结果后，对问题中的含有"other"的结果处理
 code/agent.py: 完整的运行代码（有待整理）
 
+最好的那个data:不知道是哪个pvc里的前缀为question_后缀为_parked_new的文件夹(来不及找了啊啊啊)
+
 vllm命令行运行命令：
 
 ```bash
