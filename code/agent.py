@@ -1255,5 +1255,4 @@ if __name__ == "__main__":
 
     print(f"Saved metrics to {metrics_path}")
     print(f"Overall accuracy: {overall_acc:.4f} ({total_correct}/{total_processed})")
-    # 1. 兜底  2. relation 3. 
     
